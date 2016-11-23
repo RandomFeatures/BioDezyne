@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FDC5975-CCBA-45D4-B94B-A77EC1508A36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BioDezyne.My.MyApplication</StartupObject>
+    <RootNamespace>BioDezyne</RootNamespace>
+    <AssemblyName>BioDezyne</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>bio.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\..\Projects\BioDezyne\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Projects\BioDezyne\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports, Version=4.0.0.1094, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.Chart, Version=4.0.0.1094, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.PdfExport, Version=4.0.0.1094, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ActiveReports.Viewer, Version=4.0.0.1094, Culture=neutral, PublicKeyToken=cc4967777c49a3ff" />
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=2.8.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=2.8.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=2.8.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="KryptonGridView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Component Factory Pty Ltd\KryptonGridView\KryptonGridView\bin\Release\KryptonGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="RFIControls, Version=1.0.2800.37156, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\RFIControls\bin\RFIControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.vb" />
+    <Compile Include="frmDexaVerify.Designer.vb">
+      <DependentUpon>frmDexaVerify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDexaVerify.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvents.Designer.vb">
+      <DependentUpon>frmEvents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageDoc.Designer.vb">
+      <DependentUpon>frmManageDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintDocs.Designer.vb">
+      <DependentUpon>frmPrintDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintPreview.Designer.vb">
+      <DependentUpon>frmPrintPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatient.Designer.vb">
+      <DependentUpon>frmPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAdmin.Designer.vb">
+      <DependentUpon>frmUserAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reports\rptpatientmain.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptpatientmain.rpx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\rptphysicanreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptphysicanreport.rpx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmManageDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintDocs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrintDocs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAdmin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virussafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_family.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_virus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easymoblog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gadu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kdmconfig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kexi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klpq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kopeteavailable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksirtet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messener.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mydocuments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reminders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_choose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_detailed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_multicolumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksysguard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaddressbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kchart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupevent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identity1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_group1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_family1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identity2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kdmconfig1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krdc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fnd_family.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mydocuments1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\package_editors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bio.ico" />
+    <Content Include="Properties.ico" />
+    <EmbeddedResource Include="reports\rptphysicanreport.rpx">
+      <Generator>ARVSPackage.VBCodeGenerator</Generator>
+      <LastGenOutput>rptphysicanreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Resources\stock_people.png" />
+    <None Include="Resources\personal1.png" />
+    <None Include="Resources\personal.png" />
+    <None Include="Resources\stock_people1.png" />
+    <EmbeddedResource Include="frmDexaVerify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDexaVerify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvents.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEvents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrintPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rptpatientmain.rpx">
+      <Generator>ARVSPackage.VBCodeGenerator</Generator>
+      <LastGenOutput>rptpatientmain.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{AF926212-ACFC-4A3B-A02B-9D419D40D7AE}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemLogin\SystemLogin.vbproj">
+      <Project>{382A3FAA-79A0-485A-84D1-A967138FF41C}</Project>
+      <Name>SystemLogin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
