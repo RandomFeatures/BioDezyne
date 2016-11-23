@@ -1,5 +1,5 @@
 # BioDezyne
-Side project from a few years ago, for which I never recived the final payment. I vaguely remeber it having something to do with collecting patient data.
+Side project from a few years ago, for which I never received the final payment. I vaguely remember it having something to do with collecting patient data.
 
 
 ## Screen Shots
